@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ragam Bahasa</title>
+    <link rel="stylesheet" href="./../src/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-800 min-h-screen font-[Montserrat]">
+    <nav>
+      <div
+        class="flex justify-between p-3 items-center text-sm md:text-base lg:text-lg"
+      >
+        <h1 class="text-white font-bold">RAGAM BAHASA</h1>
+        <ul class="flex gap-5 text-[#c4c4c4]">
+          <li class="hover:underline hover:ease-in-out duration-500">
+            <a href="">Home</a>
+          </li>
+          <li>
+            <button
+              id="aboutBtn"
+              class="hover:underline hover:ease-in-out duration-500"
+            >
+              About
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="h-full">
+      <div
+        class="flex flex-col m-auto w-[50%] md:w-[55%] lg:w-[52%] xl:w-[50%]"
+      >
+        <p class="text-[#c4c4c4] text-sm md:text-base lg:text-lg xl:text-xl">
+          APA ITU?
+        </p>
+        <h1
+          class="self-center text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-bold"
+        >
+          RAGAM BAHASA
+        </h1>
+        <ul
+          class="flex gap-2 justify-end text-[12px] md:text-sm lg:text-lg xl:text-xl text-[#c4c4c4]"
+        >
+          <li>
+            <button
+              id="IntroductionBtn"
+              class="border-2 hover:bg-white hover:text-[#25262B] hover:border-white hover:ease-in-out duration-300 border-[#c4c4c4] rounded-md px-1"
+            >
+              Introduction
+            </button>
+          </li>
+          <li>
+            <button
+              class="border-2 hover:bg-white hover:text-[#25262B] hover:border-white hover:ease-in-out duration-300 border-[#c4c4c4] rounded-md px-1"
+            >
+              <a href="more.html">View More</a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!--Modal About-->
+    <div
+      id="myModalAbout"
+      class="fixed inset-0 bg-black bg-opacity-50 flex hidden items-center justify-center"
+    >
+      <div class="bg-white p-6 rounded-lg shadow-lg w-96">
+        <h2 class="text-xl font-semibold mb-4">About Me</h2>
+        <div class="mb-4">
+          <h1 class="font-bold">UIN ALAUDDIN MAKASSAR</h1>
+          <ul>
+            <li><a class="font-semibold">Fakultas Sains Dan Teknologi</a></li>
+            <li class="mb-3 font-semibold"><a>Jurusan Sistem Informasi</a></li>
+            <li><a>MUHAMMAD INDAR 60900124010</a></li>
+            <hr />
+            <li><a>AYEZHA RHABBYANA 60900124025</a></li>
+            <hr />
+            <li><a>DESTINE ARIYEN KOSASIH 60900124100</a></li>
+          </ul>
+        </div>
+        <button
+          id="closeAboutBtn"
+          class="mt-4 px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+    <!--Modal Introduction-->
+    <div
+      id="myModalIntro"
+      class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden"
+    >
+      <div
+        class="bg-white p-6 rounded-lg shadow-lg w-96 max-h-[80vh] overflow-y-auto"
+      >
+        <h2 class="text-xl font-semibold mb-4">RAGAM BAHASA</h2>
+
+        <p class="mb-3">
+          Bachman (1990) menjelaskan bahwa ragam bahasa adalah variasi bahasa
+          menurut pemakaian yang berbeda-beda menurut topik yang dibicarakan,
+          menurut hubungan pembicara, kawan bicara, orang yang dibicarakan,
+          serta menurut medium pembicara.
+        </p>
+        <p class="mb-3">
+          Sederhananya ragam bahasa Indonesia adalah variasi bahasa berdasarkan
+          pemakaiannya, topik yang dibicarakan, hubungan pembicara, lawan
+          bicara, orang yang dibicarakan, serta media atau platform pembicara.
+        </p>
+        <div class="mb-3">
+          <h1 class="font-semibold">Ragam bahasa berdasarkan situasi:</h1>
+          <p>
+            1. Formal, Penggunaan ejaan baku dan pelafalan bahasa yang benar dan
+            sesuai PUEBI dan terstruktur. <br />
+            2. Semiformal, Penggunaan ejaan yang baku dan pelafalan yang baner
+            bercampur dengan bahasa keseharian. <br />
+            3. Nonformal, Tidak memperhatikan ejaan dan pelafalan, yang
+            terpenting pembaca/pendengar bisa memahami apa yang dikomunikasikan.
+          </p>
+        </div>
+        <div class="mb-3">
+          <h1 class="font-semibold">Ragam bahasa berdasarkan sarana :</h1>
+          <p>
+            1. Ragam Lisan <br />
+            • Cenderung bersifat spontan. <br />
+            • Kurang tertata dan tidak terstruktur. <br />
+            2. Ragam tulisan <br />
+            • Tidak bersifat spontan, penulis memiliki waktu untuk memikirkan
+            dan menata diksi yang tepat, serta struktur kalimat yang sesuai.
+            <br />
+            • Lebih tertata dan lebih terstruktur.
+          </p>
+        </div>
+        <div class="mb-3">
+          <h1 class="font-semibold">Ragam bahasa berdasarkan pemakaian :</h1>
+          <p class="mb-2">
+            <span class="font-semibold">1. Ragam bahasa Ilmiah</span>
+            <br />
+            Ragam ini biasanya digunakan untuk komunikasi antara proses kegiatan
+            dan hasil penalaran ilmiah. Seperti dalam penulisan proposal,
+            laporan, artikel, kegiatan ilmiah, dan sebagainya.
+          </p>
+          <p class="mb-2">
+            karekteristik khasnya ialah: <br />
+            • Bersifat Logis, formal, cermat, dan objektif (didasarkan pada
+            fakta dan kenyataan) <br />
+            • Menggunakan kalimat efektif <br />
+            • Menghindari kalimat bermakna ambigu, dan menghindari kalimat yang
+            berlebih-lebihan <br />
+            • Sistematis, sesuai dengan aturan penulisan karya ilmiah (pembuka,
+            isi, dan penutup) <br />
+            • Banyak menggunakan istilah-istilah khusus dan asing. <br />
+            • Bersifat cermat, dan sesuai dengan kaidah bahasa Indonesia baku
+            PUEBI. <br />
+            • Digunakan untuk menyampaikan dan memaparkan teori, fakta, konsep,
+            dan prinsip dalam karya ilmiah. <br />
+          </p>
+          <p class="mb-2">
+            <span class="font-semibold">2. Ragam bahasa Jurnalistik </span
+            ><br />
+            Ragam ini biasanya digunakan dalam pemberitahun media eleknonik dan
+            media cetak, yang menyajikan fakta secara utuh dan objektif.
+          </p>
+          <p class="mb-2">
+            Karakteristik khasnya ialah : <br />
+            • Menggunakan kalimat efektif, mudah dipahami oleh pembaca. <br />
+
+            • Menggunakan kata atau istilah yang akrab ditelinga masyarakat dan
+            tidak menggunakan istilah-istilah asing/teknis <br />
+            • Menggunakan kalimat dan paragraf yang pendek dan sederhana. <br />
+            • Menggunakan kalimat yang bersifat denotatif. <br />
+            • kalimat bersifat singkat, padat, jelas, dan menarik bagi pembaca.
+            <br />
+            • Selalu berpusat pada topik. <br />
+            • Bersifat objektif daripada subjektif, dan bersifat metafora.
+            <br />
+          </p>
+          <p class="mb-2">
+            <span class="font-semibold">3. Ragam bahasa Sastra </span><br />
+            Ragam ini yang mengutamakan unsur-unsur keindahan seni, dan
+            menekankan gaya pengungkapan simbolik dengan memadukan unsur
+            instrinsik dan ekstrinsik di dalamnya.
+          </p>
+          <p>
+            Karakteristik khasnya ialah : <br />
+            • Banyak menggunakan kata yang bersifat konotatif (ambigu)
+            <br />
+
+            • Banyak menggunakan kata kiasan atau ungkapan, yang dapat
+            memberikan sentuhan emosional kepada pembaca (menekan unsur
+            emosional)
+            <br />
+            • Menggunakan kata atau ungkapan yang kurang lazim atau tidak
+            dikenal dalam bahasa umum
+            <br />
+            • Bersifat bebas, tidak memperhatikan struktur dan aturan formal
+            berbahasa yang penting menghasilkan keindahan
+            <br />
+            • Menggunakan kalimat yang tidak efektif
+            <br />
+            • Bersifat Subjektif, Kreatif, dan Inovatif
+          </p>
+        </div>
+
+        <button
+          id="closeIntrolBtn"
+          class="mt-4 px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+    <footer class="bg-gray-700 w-full mt-6 text-white text-center py-4">
+      <p class="text-sm">&copy; 2024 Muhammad Indar. All rights reserved.</p>
+    </footer>
+    <script src="./../src/js/script.js"></script>
+  </body>
+</html>
