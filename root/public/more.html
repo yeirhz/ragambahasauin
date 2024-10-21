@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More Ragam Bahasa</title>
+    <link rel="stylesheet" href="./../../src/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-800 text-white min-h-screen flex flex-col items-center">
+    <!-- Judul di atas tengah -->
+    <header class="text-center my-8">
+      <h1
+        class="text-4xl font-bold cursor-pointer"
+        onclick="openModal('modal-judul')"
+      >
+        BAYANG-BAYANG KOTA
+      </h1>
+    </header>
+
+    <!-- Konten utama di bawah judul -->
+    <nav class="bg-gray-700 p-4 rounded-lg w-full max-w-4xl">
+      <ul class="flex justify-center space-x-4 text-[#c4c4c4] text-lg">
+        <li><a href="index.html" class="hover:text-white">Home</a></li>
+        <li>
+          <a
+            href="#"
+            onclick="openModal('modal-artikel')"
+            class="hover:text-white"
+            >Artikel</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            onclick="openModal('modal-berita')"
+            class="hover:text-white"
+            >Berita</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            onclick="openModal('modal-puisi')"
+            class="hover:text-white"
+            >Puisi</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Modal Judul -->
+    <div
+      id="modal-judul"
+      class="fixed inset-0 hidden bg-black bg-opacity-50 flex justify-center items-center"
+    >
+      <div
+        class="bg-gray-700 text-white p-6 rounded-lg shadow-lg w-full max-w-md mx-auto mt-10 mb-10"
+      >
+        <h2 class="text-2xl font-semibold mb-4">Informasi</h2>
+        <p>
+          "Bayang-bayang kota" menggambarkan sisi tersembunyi dari kehidupan di
+          kota besar. Di balik kesibukan dan kemewahan, ada kisah-kisah
+          orang-orang yang terabaikan dan hidup di pinggiran. Istilah ini juga
+          mencakup kenangan masa lalu yang masih memengaruhi karakter kota.
+          Dengan kata lain, bayang-bayang ini menunjukkan hal-hal yang tidak
+          selalu terlihat, tetapi penting untuk memahami kehidupan di kota
+          tersebut.
+        </p>
+        <button
+          class="bg-red-500 text-white px-4 py-2 mt-4 rounded hover:bg-red-600"
+          onclick="closeModal('modal-judul')"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal Artikel -->
+    <div
+      id="modal-artikel"
+      class="fixed inset-0 hidden bg-black bg-opacity-50 flex justify-center items-center"
+    >
+      <div
+        class="relative bg-gray-700 text-white rounded-lg shadow-lg w-full max-w-3xl mx-auto mt-10 mb-10 max-h-[90vh] overflow-hidden"
+      >
+        <div class="bg-gray-700 p-4 z-10 sticky top-0">
+          <h2 class="text-2xl font-semibold">Artikel</h2>
+        </div>
+        <div class="overflow-y-auto h-[70vh]">
+          <!-- Membatasi tinggi untuk gulir -->
+          <div class="pt-4 space-y-4">
+            <img
+              src="./assets/image/artikel/artikel_1.jpg"
+              alt="Gambar Artikel 1"
+              class="w-full"
+            />
+            <img
+              src="./assets/image/artikel/artikel_2.jpg"
+              alt="Gambar Artikel 2"
+              class="w-full"
+            />
+            <img
+              src="./assets/image/artikel/artikel_3.jpg"
+              alt="Gambar Artikel 3"
+              class="w-full"
+            />
+            <img
+              src="./assets/image/artikel/artikel_4.jpg"
+              alt="Gambar Artikel 4"
+              class="w-full"
+            />
+            <img
+              src="./assets/image/artikel/artikel_5.jpg"
+              alt="Gambar Artikel 5"
+              class="w-full"
+            />
+          </div>
+        </div>
+        <button
+          class="bg-red-500 text-white px-4 py-2 mt-4 rounded hover:bg-red-600"
+          onclick="closeModal('modal-artikel')"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal Berita -->
+    <div
+      id="modal-berita"
+      class="fixed inset-0 hidden bg-black bg-opacity-50 flex justify-center items-center"
+    >
+      <div
+        class="relative bg-gray-700 text-white rounded-lg shadow-lg w-full max-w-3xl mx-auto mt-10 mb-10 max-h-[90vh] overflow-hidden"
+      >
+        <div class="bg-gray-700 p-4 z-10 sticky top-0">
+          <h2 class="text-2xl font-semibold">Berita</h2>
+        </div>
+        <div class="overflow-y-auto h-[70vh]">
+          <!-- Membatasi tinggi untuk gulir -->
+          <div class="pt-4 space-y-4">
+            <img
+              src="./assets/image/berita.jpg"
+              alt="Gambar Berita 1"
+              class="w-full"
+            />
+          </div>
+        </div>
+        <button
+          class="bg-red-500 text-white px-4 py-2 mt-4 rounded hover:bg-red-600"
+          onclick="closeModal('modal-berita')"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal Puisi -->
+    <div
+      id="modal-puisi"
+      class="fixed inset-0 hidden bg-black bg-opacity-50 flex justify-center items-center"
+    >
+      <div
+        class="relative bg-gray-700 text-white rounded-lg shadow-lg w-full max-w-3xl mx-auto mt-10 mb-10 max-h-[90vh] overflow-hidden"
+      >
+        <div class="bg-gray-700 p-4 z-10 sticky top-0">
+          <h2 class="text-2xl font-semibold">Puisi</h2>
+        </div>
+        <div class="overflow-y-auto h-[70vh]">
+          <!-- Membatasi tinggi untuk gulir -->
+          <div class="pt-4 space-y-4">
+            <img
+              src="./assets/image/puisi.jpg"
+              alt="Gambar Puisi 1"
+              class="w-full"
+            />
+          </div>
+        </div>
+        <button
+          class="bg-red-500 text-white px-4 py-2 mt-4 rounded hover:bg-red-600"
+          onclick="closeModal('modal-puisi')"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+    <footer class="bg-gray-700 w-full mt-6 text-white text-center py-4">
+      <p class="text-sm">&copy; 2024 Muhammad Indar. All rights reserved.</p>
+    </footer>
+    <script src="../../src/js/script.js"></script>
+  </body>
+</html>
